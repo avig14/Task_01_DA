@@ -1,14 +1,14 @@
 # Task_01_DA
 This is my first task of my Unpaid internship. I have completed it with my full efforts. Hope it is good.
 
-# 📊 Skillytixs Internship – Task 1  
+# Skillytixs Internship – Task 1  
 ## **Data Cleaning & Preprocessing**  
 **Dataset:** Medical Appointment No Shows  
 **Tools Used:** Python, Pandas  
 
 ---
 
-## 📝 **Objective**
+## **Objective**
 The goal of this task is to clean and preprocess the raw dataset by handling:
 - Missing values  
 - Duplicate records  
@@ -21,7 +21,7 @@ This prepares the dataset for further analysis and modeling.
 
 ---
 
-## 📥 **Dataset Used**
+## **Dataset Used**
 **File:** `KaggleV2-May-2016.csv`  
 This dataset contains information about medical appointments in Brazil and whether a patient showed up or not.
 
@@ -29,20 +29,20 @@ This dataset contains information about medical appointments in Brazil and wheth
 
 ## 🔧 **Steps Performed**
 
-### **1️⃣ Loaded and Inspected the Dataset**
+### **1️. Loaded and Inspected the Dataset**
 - Read the raw CSV into pandas  
 - Viewed sample rows, column details, missing values, and data types  
 - Checked dataset shape and structure  
 
 ---
 
-### **2️⃣ Handled Duplicate Records**
+### **2️. Handled Duplicate Records**
 - Identified duplicates using `df.duplicated().sum()`  
 - Removed duplicates with `df.drop_duplicates()`  
 
 ---
 
-### **3️⃣ Cleaned & Standardized Column Names**
+### **3️. Cleaned & Standardized Column Names**
 Renamed all columns to:
 - lowercase  
 - snake_case format  
@@ -55,14 +55,14 @@ Example:
 
 ---
 
-### **4️⃣ Converted Columns to Proper Data Types**
+### **4️. Converted Columns to Proper Data Types**
 - Converted `scheduledday` and `appointmentday` to datetime  
 - Converted `age` to integer  
 - Ensured categorical fields have consistent formats  
 
 ---
 
-### **5️⃣ Standardized Text Fields**
+### **5️. Standardized Text Fields**
 - `gender` converted to uppercase (`M`, `F`)  
 - `neighbourhood` formatted to title case  
 - Converted `no_show` from `"Yes"/"No"` → `1/0`  
